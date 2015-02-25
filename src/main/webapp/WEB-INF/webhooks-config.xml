@@ -1,0 +1,31 @@
+<xml>
+
+<!--
+The API key provide here should also be entered when
+registering this custom integration in Workfront under
+		Setup > Documents > Custom Integrations.
+
+		Replace "change_me" with an API key of your choosing.
+		<api-key>change_me</api-key>
+
+		< You may define more than one API key >
+		<api-key>value</api-key>
+-->
+
+	<api-keys>
+		<api-key>123456</api-key>
+		<api-key>1111111</api-key>
+	</api-keys>
+	<mapped-directories>
+		<!--
+		A list of directories to publish.  These directories
+		can reside locally or on a mapped network drive.
+
+		Replace the paths below with path(s) on your network.
+		-->
+
+		<path>~/</path>
+		<path>/usr/share/texinfo</path>
+	</mapped-directories>
+	<apply-authentication>false</apply-authentication>
+</xml>
