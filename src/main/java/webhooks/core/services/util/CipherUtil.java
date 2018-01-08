@@ -54,7 +54,7 @@ public class CipherUtil {
 		try {
 			Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5PADDING");
 			cipher.init(Cipher.ENCRYPT_MODE, new SecretKeySpec(key, "AES"));
-			final String encryptedString = Base64.encodeBase64String(cipher.doFinal(str.getBytes()));
+			final String encryptedString = Base64.encodeBase64URLSafeString(cipher.doFinal(str.getBytes()));
 			return encryptedString;
 		} catch (Exception ex) {
 			Logger.getLogger(CipherUtil.class.getName()).log(Level.SEVERE, null, ex);
